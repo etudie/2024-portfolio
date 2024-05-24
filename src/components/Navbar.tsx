@@ -40,7 +40,7 @@ const navItems: navItemsType[] = [
 const subNavItems: navItemsType[] = [
   {
     title: "Involvement",
-    url: "involvement",
+    url: "/involvement",
   },
   {
     title: "Mentorship",
