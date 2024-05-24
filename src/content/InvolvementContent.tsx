@@ -1,5 +1,5 @@
 import mentorship from "../assets/involvement/mentoring.jpeg";
-import bobatalksImg from "../assets/involvement/bobatalks.webp";
+import bobatalksImg from "../assets/involvement/bobatalks.jpeg";
 import mc2c from "../assets/involvement/mc2c.jpeg";
 import hermanMiller from "../assets/involvement/HermanMiller.png";
 import swe from "../assets/involvement/SWE.png";

@@ -19,7 +19,7 @@ export const Card1: React.FC<Card1Props> = ({
   return (
     <div className="flex flex-row py-10 text-white md:px-40">
       <div className="w-1/5 opacity-60 hover:opacity-100">
-        <img src={preview} alt="preview" className=" rounded " />
+        <img src={preview} alt="preview" className="w-full rounded" />
       </div>
       <div className="flex-1 p-10 pt-0">
         <h3 className="pb-3 text-3xl">{title}</h3>
