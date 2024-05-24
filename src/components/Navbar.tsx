@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface TitleProps {
   title: string;
@@ -39,7 +40,7 @@ const navItems: navItemsType[] = [
 const subNavItems: navItemsType[] = [
   {
     title: "Involvement",
-    url: "/involvement",
+    url: "involvement",
   },
   {
     title: "Mentorship",
@@ -76,14 +77,14 @@ const Navigation: React.FC<NavbarProps> = ({ items }) => {
         >
           {items.map((item, idx) => {
             return (
-              <a href={item.url}>
+              <Link to={item.url}>
                 <li
                   key={idx}
                   className="px-4 py-1 text-white transition-all hover:rounded-full hover:bg-white hover:text-zinc-800"
                 >
                   {item.title}
                 </li>
-              </a>
+              </Link>
             );
           })}
           <SubNav />
