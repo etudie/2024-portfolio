@@ -139,7 +139,7 @@ const SubNav = () => {
         <ul className={`fixed ${isOpen ? "block" : "hidden"}`}>
           {subNavItems.map((item, idx) => {
             return (
-              <a href={item.url}>
+              <a href={item.url} key={idx}>
                 <li
                   className=" my-0.5 rounded-full bg-white px-4 py-1 hover:bg-zinc-800 hover:text-white"
                   key={idx}
