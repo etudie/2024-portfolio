@@ -17,15 +17,15 @@ export const Card1: React.FC<Card1Props> = ({
   title,
 }) => {
   return (
-    <div className="flex flex-row py-10 text-white md:px-40">
-      <div className="w-1/5 opacity-60 hover:opacity-100">
+    <div className="flex flex-col py-10 text-white md:flex-row md:px-40">
+      <div className="opacity-60 hover:opacity-100 md:w-1/5">
         <img src={preview} alt="preview" className="w-full rounded" />
       </div>
       <div className="flex-1 p-10 pt-0">
         <h3 className="pb-3 text-3xl">{title}</h3>
         <span className="leading-8">{content}</span>
       </div>
-      <div className="w-1/5">
+      <div className="md:w-1/5">
         {links.map((link, idx) => (
           <button
             className="m-1 w-full rounded-full bg-white p-3 text-zinc-950"

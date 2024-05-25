@@ -14,10 +14,10 @@ export const Mentorship = () => {
       <Navbar />
       <MainHeader title={title} subtitle={subtitle} />
       <div className="flex min-h-screen items-center justify-center p-8">
-        <div className="flex w-4/5 flex-row">
-          <div className="w-1/3">{content1}</div>
-          <div className="w-1/3">{content2}</div>
-          <div className="w-1/3">{content3}</div>
+        <div className="flex w-4/5 flex-col md:flex-row">
+          <div className="md:w-1/3">{content1}</div>
+          <div className="md:w-1/3">{content2}</div>
+          <div className="md:w-1/3">{content3}</div>
         </div>
       </div>
       <Footer />
