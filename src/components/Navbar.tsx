@@ -172,21 +172,21 @@ const MobileNavBtn: React.FC<MobileNavProps> = ({ isOpen, setIsOpen }) => {
 
 const MobileNav: React.FC<MobileNavProps> = ({ setIsOpen }) => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center bg-white">
-      <ul className="list-none">
+    <div className="flex h-screen w-screen flex-col items-center justify-center bg-zinc-800">
+      <ul className="list-none text-white">
         <li
           className="flex justify-center p-4"
           onClick={() => {
             setIsOpen(false);
           }}
         >
-          <XCircleIcon className="size-10 text-zinc-800" />
+          <XCircleIcon className="size-10 text-white" />
         </li>
         {navItems.map((item, idx) => {
           return (
             <Link to={item.url} key={idx}>
               <li
-                className="p-4 text-center"
+                className="p-4 text-center "
                 onClick={() => {
                   setIsOpen(false);
                 }}
