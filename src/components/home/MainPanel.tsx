@@ -21,7 +21,7 @@ export const MainPanel = () => {
 const Hero: React.FC<HeroProps> = ({ title }) => {
   return (
     <div className="flex h-screen flex-col items-center justify-center text-center text-slate-100">
-      <div className="hero-gradient"></div>
+      <div className="hero-gradient w-full md:w-[390px]"></div>
       <h2 className="max-w-5xl p-6 pt-8 text-7xl">{title}</h2>
     </div>
   );
