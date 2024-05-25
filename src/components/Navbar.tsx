@@ -81,7 +81,7 @@ export const Navbar = () => {
           <MobileNav setIsOpen={setIsOpen} />
         </div>
       ) : (
-        <div className="fixed right-4 top-4  z-50 ">
+        <div className="fixed right-4 top-4 z-50 block md:hidden ">
           <MobileNavBtn isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       )}
