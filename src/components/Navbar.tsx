@@ -1,7 +1,7 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
 
 interface TitleProps {
   title: string;
@@ -61,6 +61,15 @@ const subNavItems: navItemsType[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
+
   return (
     <>
       <div className="fixed  z-50 hidden w-full flex-row items-center justify-center p-4 md:flex">
@@ -169,6 +178,14 @@ const MobileNav: React.FC<MobileNavProps> = ({ setIsOpen }) => {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-white">
       <ul className="list-none">
+        <li
+          className="flex justify-center p-4"
+          onClick={() => {
+            setIsOpen(false);
+          }}
+        >
+          <XCircleIcon className="size-10 text-zinc-800" />
+        </li>
         {navItems.map((item, idx) => {
           return (
             <Link to={item.url} key={idx}>
