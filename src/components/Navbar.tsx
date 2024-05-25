@@ -53,10 +53,6 @@ const subNavItems: navItemsType[] = [
     title: "Mentorship",
     url: "/mentorship",
   },
-  {
-    title: "All Projects",
-    url: "/projects",
-  },
 ];
 
 export const Navbar = () => {
