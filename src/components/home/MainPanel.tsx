@@ -10,7 +10,7 @@ export const MainPanel = () => {
         title={
           <>
             A dynamic <i className="font-serif">Software Engineer</i> that
-            specializes in <i className="font-serif">UX</i>
+            brings <i className="font-serif">UX</i> visions to life
           </>
         }
       />
